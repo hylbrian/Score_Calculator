@@ -13,14 +13,16 @@
          />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textAlignment="gravity"
         android:text="0 Colour points"
         />
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_margin="8dp"
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -43,6 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="1 FIX"
+            />
 
         <Button
             android:layout_width="0dp"
@@ -52,5 +55,63 @@
             />
 
     </LinearLayout>
+
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Distance from cones:"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:text="White/Black (wb) Mission:"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:gravity="right"
+        android:textAlignment="gravity"
+        android:text="0 Colour points"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="99dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="WB FAILURE" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="WB SUCCESS" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        android:text="0 points"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="RESET" />
 
 </RelativeLayout>
