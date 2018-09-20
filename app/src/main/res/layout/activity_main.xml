@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Colour Identification"
+        android:text="@string/colour_id"
          />
 
     <TextView
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:gravity="right"
         android:textAlignment="gravity"
-        android:text="0 Colour points"
+        android:text="@string/colour_points"
         />
 
     <LinearLayout
@@ -30,28 +30,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="3 FIXES"
+            android:text="@string/b3_fixes"
             />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="2 FIXES"
+            android:text="@string/b2_fixes"
             />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="1 FIX"
+            android:text="@string/b1_fix"
             />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="0 FIXES"
+            android:text="@string/b0_fixes"
             />
 
     </LinearLayout>
@@ -61,14 +61,108 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
-        android:text="Distance from cones:"
+        android:text="@string/distance_cones"
         />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="#00E676"
+
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="#00E676"
+                android:text="@string/distance"
+                />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="#00E676"
+
+                android:text="@string/points"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/near_ball"
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text=""
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/points"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/far_ball"
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text=""
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/points"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/robot_home"
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text=""
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/points"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_weight="1"
+        android:layout_alignParentRight="true"
+        android:text="@string/update" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="350dp"
-        android:text="White/Black (wb) Mission:"
+        android:text="@string/WB_MISSION"
         />
 
     <TextView
@@ -77,20 +171,22 @@
         android:layout_marginTop="350dp"
         android:gravity="right"
         android:textAlignment="gravity"
-        android:text="0 wb points"
+        android:text="@string/wb_points"
         />
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_margin="99dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="132dp"
+        android:orientation="horizontal">
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="WB FAILURE" />
+            android:text="@string/wb_failure" />
 
         <Button
             android:layout_width="0dp"
@@ -104,7 +200,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
         android:layout_centerHorizontal="true"
-        android:text="0 points"
+        android:text="@string/points_total"
         />
     <Button
         android:layout_width="wrap_content"
@@ -112,6 +208,6 @@
         android:layout_weight="1"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="RESET" />
+        android:text="@string/reset" />
 
 </RelativeLayout>
