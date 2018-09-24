@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Score_Calculator</string>
     <string name="colour_id">Colour Identification:</string>
-    <string name="colour_points">0 Colour points</string>
+    <string name="colour_points_start">0 Colour points</string>
+    <string name="colour_points">%d Colour points</string>
     <string name="b3_fixes">3 FIXES</string>
     <string name="b2_fixes">2 FIXES</string>
     <string name="b1_fix">1 FIX</string>
