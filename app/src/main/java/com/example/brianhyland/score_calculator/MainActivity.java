@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private int cpoints = 0;
     private TextView colourPoints;
+    private EditText nearBallDistance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         colourPoints = findViewById(R.id.col_points);
+        nearBallDistance = findViewById(R.id.nearball_distance);
 
         Button b0_fixes = findViewById(R.id.b0_fixes);
         b0_fixes.setOnClickListener(new View.OnClickListener(){
