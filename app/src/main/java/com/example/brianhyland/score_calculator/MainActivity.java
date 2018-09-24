@@ -10,7 +10,9 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private int cpoints = 0;
+    private int wbpoints =0;
     private TextView colourPoints;
+    private TextView wbPoints;
     private EditText nearBallDistance;
 
     @Override
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         colourPoints = findViewById(R.id.col_points);
+        wbPoints = findViewById(R.id.wbpoints);
         nearBallDistance = findViewById(R.id.nearball_distance);
 
         Button b0_fixes = findViewById(R.id.b0_fixes);
@@ -62,12 +65,33 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 cpoints = 0;
+                wbpoints = 0;
                 updateView();
             }
         });
 
+        Button wbfailure = findViewById(R.id.wbfailure);
+        wbfailure.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                wbpoints = 0;
+                updateView();
+            }
+        });
+
+        Button wbsuccess = findViewById(R.id.wbsuccess);
+        wbsuccess.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                wbpoints = 60;
+                updateView();
+            }
+        });
     }
     public void updateView(){
         colourPoints.setText(getString(R.string.colour_points, cpoints));
+        wbPoints.setText(getString(R.string.wb_points, wbpoints));
+
+
     }
 }

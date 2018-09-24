@@ -181,12 +181,13 @@
         />
 
     <TextView
+        android:id="@+id/wbpoints"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="350dp"
         android:gravity="right"
         android:textAlignment="gravity"
-        android:text="@string/wb_points"
+        android:text="@string/wb_points_start"
         />
 
     <LinearLayout
@@ -198,12 +199,14 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/wbfailure"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/wb_failure" />
 
         <Button
+            android:id="@+id/wbsuccess"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -211,6 +214,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"

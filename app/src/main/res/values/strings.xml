@@ -10,7 +10,8 @@
     <string name="distance_cones">Distance from cones:</string>
     <string name="update">UPDATE</string>
     <string name="WB_MISSION">White/Black (WB) Mission:</string>
-    <string name="wb_points">0 wb points</string>
+    <string name="wb_points_start">0 wb points</string>
+    <string name="wb_points">%d wb points</string>
     <string name="wb_failure">WB FAILURE</string>
     <string name="wb_success">WB SUCCESS</string>
     <string name="points_total">0 points</string>
