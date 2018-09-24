@@ -14,7 +14,8 @@
     <string name="wb_points">%d wb points</string>
     <string name="wb_failure">WB FAILURE</string>
     <string name="wb_success">WB SUCCESS</string>
-    <string name="points_total">0 points</string>
+    <string name="points_total_start">0 points</string>
+    <string name="points_total">%d points</string>
     <string name="reset">RESET</string>
     <string name="points">Points</string>
     <string name="distance">Distance [ft}</string>

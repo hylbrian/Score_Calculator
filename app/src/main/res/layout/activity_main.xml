@@ -219,7 +219,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/points_total"
+        android:text="@string/points_total_start"
         />
     <Button
         android:id="@+id/reset"
