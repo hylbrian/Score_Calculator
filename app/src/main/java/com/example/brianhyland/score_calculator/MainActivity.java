@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
 
                 robotHomePoints = Integer.parseInt(robotHomeDistance.getText().toString());
                 robotHomePoints += 5;
+
+
                 //nBallPoints.setText(getString(R.string.near_ball_points, nearBallPoints));
                 //colourPoints.setText(getString(R.string.colour_points, cpoints));
 
@@ -112,6 +114,9 @@ public class MainActivity extends AppCompatActivity {
                 nearBallPoints = 0;
                 farBallPoints = 0;
                 robotHomePoints = 0;
+                nearBallDistance.setText("");
+                farBallDistance.setText("");
+                robotHomeDistance.setText("");
                 updateView();
             }
         });
