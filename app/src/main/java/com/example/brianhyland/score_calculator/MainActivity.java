@@ -51,7 +51,29 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 nearBallPoints = Integer.parseInt(nearBallDistance.getText().toString());
-                nearBallPoints += 5;
+
+                if(nearBallPoints <= 5){
+                    nearBallPoints = 110;
+                }else{
+                    if(nearBallPoints <= 10){
+                        nearBallPoints = 100;
+                    }else{
+                        if(nearBallPoints <= 20){
+                            nearBallPoints = 80;
+                        }else{
+                            if(nearBallPoints <= 30){
+                                nearBallPoints = 50;
+                            }else{
+                                if(nearBallPoints <= 45){
+                                    nearBallPoints = 10;
+                                }else{
+                                    nearBallPoints = 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                //nearBallPoints += 5;
 
                 farBallPoints = Integer.parseInt(farBallDistance.getText().toString());
                 farBallPoints += 5;
