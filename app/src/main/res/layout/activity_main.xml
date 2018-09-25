@@ -92,8 +92,7 @@
                 android:layout_width="120dp"
                 android:layout_height="40dp"
                 android:background="#00E676"
-
-                android:text="@string/points"
+                android:text="Points"
                 />
 
         </TableRow>
@@ -114,9 +113,11 @@
                 android:digits="0123456789"
                 />
             <TextView
+                android:id="@+id/nearball_points"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="@string/points"
+                android:gravity="center"
+                android:text="@string/points_start"
                 />
         </TableRow>
 
@@ -137,7 +138,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="@string/points"
+                android:gravity="center"
+                android:text="0"
                 />
         </TableRow>
 
@@ -158,7 +160,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="@string/points"
+                android:gravity="center"
+                android:text="0"
                 />
         </TableRow>
 
@@ -166,6 +169,7 @@
     </TableLayout>
 
     <Button
+        android:id="@+id/update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="290dp"

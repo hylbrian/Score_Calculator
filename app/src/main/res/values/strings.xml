@@ -17,11 +17,14 @@
     <string name="points_total_start">0 points</string>
     <string name="points_total">%d points</string>
     <string name="reset">RESET</string>
-    <string name="points">Points</string>
+    <string name="points_start">0</string>
     <string name="distance">Distance [ft}</string>
     <string name="near_ball">Near Ball</string>
     <string name="far_ball">Far Ball</string>
+    <string name="near_ball_points">%d</string>
+    <string name="far_ball_points">%d</string>
     <string name="robot_home">Robot Home</string>
+    <string name="robot_home_points">%d</string>
 
 
 </resources>

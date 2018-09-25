@@ -10,11 +10,24 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private int cpoints = 0;
-    private int wbpoints =0;
+    private int wbpoints = 0;
+    private int nearBallPoints = 0;
+    private int farBallPoints = 0;
+    private int robotHomePoints = 0;
+
+
     private TextView colourPoints;
     private TextView wbPoints;
     private TextView totalPoints;
+    private TextView nBallPoints;
+    private TextView fBallPoints;
+    private TextView rHomePoints;
+
+
     private EditText nearBallDistance;
+    private EditText farBallDistance;
+    private EditText robotHomeDistance;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +37,31 @@ public class MainActivity extends AppCompatActivity {
         colourPoints = findViewById(R.id.col_points);
         wbPoints = findViewById(R.id.wbpoints);
         totalPoints = findViewById(R.id.total);
+
+        nBallPoints = findViewById(R.id.nearball_points);
         nearBallDistance = findViewById(R.id.nearball_distance);
+        farBallDistance =  findViewById(R.id.farball_distance);
+        robotHomeDistance = findViewById(R.id.robot_home_distance);
+
+        Button update = findViewById(R.id.update);
+        update.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                nearBallPoints = Integer.parseInt(nearBallDistance.getText().toString());
+                nearBallPoints += 5;
+                /*
+                farBallPoints = Integer.parseInt(farBallDistance.getText().toString());
+                farBallPoints += 5;
+                robotHomePoints = Integer.parseInt(robotHomeDistance.getText().toString());
+                robotHomePoints += 5;
+                //nBallPoints.setText(getString(R.string.near_ball_points, nearBallPoints));
+                //colourPoints.setText(getString(R.string.colour_points, cpoints));
+                */
+                updateView();
+            }
+        });
+
+
 
         Button b0_fixes = findViewById(R.id.b0_fixes);
         b0_fixes.setOnClickListener(new View.OnClickListener(){
@@ -68,6 +105,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 cpoints = 0;
                 wbpoints = 0;
+                nearBallPoints = 0;
+                farBallPoints = 0;
+                robotHomePoints = 0;
                 updateView();
             }
         });
@@ -93,7 +133,10 @@ public class MainActivity extends AppCompatActivity {
     public void updateView(){
         colourPoints.setText(getString(R.string.colour_points, cpoints));
         wbPoints.setText(getString(R.string.wb_points, wbpoints));
-        totalPoints.setText(getString(R.string.points_total, wbpoints+cpoints));
+        nBallPoints.setText(getString(R.string.near_ball_points, nearBallPoints));
+        //fBallPoints.setText(getString(R.string.far_ball_points, farBallPoints));
+        //rHomePoints.setText(getString(R.string.robot_home_points, robotHomePoints));
+        totalPoints.setText(getString(R.string.points_total, wbpoints+cpoints+nearBallPoints+farBallPoints+robotHomePoints));
 
 
 
