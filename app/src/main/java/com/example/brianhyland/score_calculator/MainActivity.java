@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         totalPoints = findViewById(R.id.total);
 
         nBallPoints = findViewById(R.id.nearball_points);
+        fBallPoints = findViewById(R.id.farball_points);
+        rHomePoints = findViewById(R.id.robothome_points);
+
         nearBallDistance = findViewById(R.id.nearball_distance);
         farBallDistance =  findViewById(R.id.farball_distance);
         robotHomeDistance = findViewById(R.id.robot_home_distance);
@@ -49,14 +52,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 nearBallPoints = Integer.parseInt(nearBallDistance.getText().toString());
                 nearBallPoints += 5;
-                /*
+
                 farBallPoints = Integer.parseInt(farBallDistance.getText().toString());
                 farBallPoints += 5;
+
                 robotHomePoints = Integer.parseInt(robotHomeDistance.getText().toString());
                 robotHomePoints += 5;
                 //nBallPoints.setText(getString(R.string.near_ball_points, nearBallPoints));
                 //colourPoints.setText(getString(R.string.colour_points, cpoints));
-                */
+
                 updateView();
             }
         });
@@ -134,8 +138,8 @@ public class MainActivity extends AppCompatActivity {
         colourPoints.setText(getString(R.string.colour_points, cpoints));
         wbPoints.setText(getString(R.string.wb_points, wbpoints));
         nBallPoints.setText(getString(R.string.near_ball_points, nearBallPoints));
-        //fBallPoints.setText(getString(R.string.far_ball_points, farBallPoints));
-        //rHomePoints.setText(getString(R.string.robot_home_points, robotHomePoints));
+        fBallPoints.setText(getString(R.string.far_ball_points, farBallPoints));
+        rHomePoints.setText(getString(R.string.robot_home_points, robotHomePoints));
         totalPoints.setText(getString(R.string.points_total, wbpoints+cpoints+nearBallPoints+farBallPoints+robotHomePoints));
 
 
