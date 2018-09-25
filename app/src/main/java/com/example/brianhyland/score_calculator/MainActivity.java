@@ -79,7 +79,28 @@ public class MainActivity extends AppCompatActivity {
                 farBallPoints += 5;
 
                 robotHomePoints = Integer.parseInt(robotHomeDistance.getText().toString());
-                robotHomePoints += 5;
+                //robotHomePoints += 5;
+                if(robotHomePoints <= 5){
+                    robotHomePoints = 110;
+                }else{
+                    if(robotHomePoints <= 10){
+                        robotHomePoints = 100;
+                    }else{
+                        if(robotHomePoints <= 20){
+                            robotHomePoints = 80;
+                        }else{
+                            if(robotHomePoints <= 30){
+                                robotHomePoints = 50;
+                            }else{
+                                if(robotHomePoints <= 45){
+                                    robotHomePoints = 10;
+                                }else{
+                                    robotHomePoints = 0;
+                                }
+                            }
+                        }
+                    }
+                }
 
 
                 //nBallPoints.setText(getString(R.string.near_ball_points, nearBallPoints));
