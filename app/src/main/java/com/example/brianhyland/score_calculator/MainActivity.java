@@ -53,19 +53,19 @@ public class MainActivity extends AppCompatActivity {
                 nearBallPoints = Integer.parseInt(nearBallDistance.getText().toString());
 
                 if(nearBallPoints <= 5){
-                    nearBallPoints = 110;
+                    nearBallPoints = 220;
                 }else{
                     if(nearBallPoints <= 10){
-                        nearBallPoints = 100;
+                        nearBallPoints = 200;
                     }else{
                         if(nearBallPoints <= 20){
-                            nearBallPoints = 80;
+                            nearBallPoints = 160;
                         }else{
                             if(nearBallPoints <= 30){
-                                nearBallPoints = 50;
+                                nearBallPoints = 100;
                             }else{
                                 if(nearBallPoints <= 45){
-                                    nearBallPoints = 10;
+                                    nearBallPoints = 20;
                                 }else{
                                     nearBallPoints = 0;
                                 }
@@ -76,7 +76,28 @@ public class MainActivity extends AppCompatActivity {
                 //nearBallPoints += 5;
 
                 farBallPoints = Integer.parseInt(farBallDistance.getText().toString());
-                farBallPoints += 5;
+                //farBallPoints += 5;
+                if(farBallPoints <= 5){
+                    farBallPoints = 110;
+                }else{
+                    if(farBallPoints <= 10){
+                        farBallPoints = 100;
+                    }else{
+                        if(farBallPoints <= 20){
+                            farBallPoints = 80;
+                        }else{
+                            if(farBallPoints <= 30){
+                                farBallPoints = 50;
+                            }else{
+                                if(farBallPoints <= 45){
+                                    farBallPoints = 10;
+                                }else{
+                                    farBallPoints = 0;
+                                }
+                            }
+                        }
+                    }
+                }
 
                 robotHomePoints = Integer.parseInt(robotHomeDistance.getText().toString());
                 //robotHomePoints += 5;
